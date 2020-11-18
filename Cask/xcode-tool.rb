@@ -6,5 +6,5 @@ cask "xcode-tool" do
   desc "A collection of useful tools for an xcode project"
   homepage "https://github.com/TBXark/xcode-tool"
 
-  app "xct"
+  binary "xct"
 end
