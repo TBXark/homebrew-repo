@@ -1,10 +1,10 @@
-cask 'xcode-tool' do
-  version '1.0.1'
+cask "xcode-tool" do
+  version "1.0.1/"
+  url "https://github.com/TBXark/xcode-tool/releases/download/1.0.1/xct-v1.0.1.zip"
   sha256 "1ccd1cdf5b9aac64ff1be01c594c6bbda519eddf045b09b43ac53de6802134eb"
-  url "https://github.com/TBXark/xcode-tool/releases/download/#{version}/xct-v#{version}.zip"
-  name 'xcode-tool'
-  homepage 'https://github.com/TBXark/xcode-tool'
-  binary 'xct'
-  depends_on macos: '>= :catalina'
+  name "xcode-tool"
+  desc "A collection of useful tools for an xcode project"
+  homepage "https://github.com/TBXark/xcode-tool"
 
+  app "xct"
 end
