@@ -5,7 +5,7 @@ class AutoRun < Formula
   license "MIT"
 
   def install
-    bin.install "xct"
+    bin.install "autorun"
   end
 
   test do
