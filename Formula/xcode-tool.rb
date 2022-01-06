@@ -4,8 +4,8 @@
 class XcodeTool < Formula
   desc "A collection of useful tools for an xcode project"
   homepage ""
-  url "https://github.com/TBXark/xcode-tool/archive/refs/tags/1.0.1.tar.gz"
-  sha256 "6b07cfedf92b5ad15db9bf5036f8e495f00b826f94d3194f3e730c44a722afff"
+  url "https://github.com/TBXark/xcode-tool/archive/refs/tags/1.0.2.tar.gz"
+  sha256 "86fa8a0210d9707f06a7e7891cd8bf6521b83cf4d2781759e6d48ecad5553dca"
   license "MIT"
 
   depends_on xcode: "10.2"
