@@ -2,8 +2,8 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Autorun < Formula
-  desc "autorun is a tool that listens for file changes and automatically executes commands."
-  homepage ""
+  desc "Autorun is a tool that listens for file changes and automatically executes commands."
+  homepage "https://github.com/TBXark/autorun"
   url "https://github.com/TBXark/autorun/archive/refs/tags/0.0.1.tar.gz"
   sha256 "23016f4835ef7d4e85817e5122119a39aea1ce4bc83c4fb61b996301dc44b2a2"
   license "MIT"

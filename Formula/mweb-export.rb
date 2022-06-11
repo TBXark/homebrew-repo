@@ -2,11 +2,11 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class MwebExport < Formula
-  desc ""
-  homepage ""
-  url "https://github.com/TBXark/mweb-export/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "16aaff043e260895b2d46692cbb11b51f266245cfa909acc781200578210175a"
-  license ""
+  desc "MWeb libiary catalog generation tool"
+  homepage "https://github.com/TBXark/mweb-export"
+  url "https://github.com/TBXark/mweb-export/archive/refs/tags/0.0.2.tar.gz"
+  sha256 "454c3157f00ec9c307cd5cea6cb9d3c2ba3ac469fd1b1a226a533a6c7052c8c2"
+  license "MIT"
 
   depends_on "go" => :build
 
@@ -25,6 +25,6 @@ class MwebExport < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+    system "mweb-export", "--help"
   end
 end

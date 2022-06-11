@@ -3,7 +3,7 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class XcodeTool < Formula
   desc "A collection of useful tools for an xcode project"
-  homepage ""
+  homepage "https://github.com/TBXark/xcode-tool"
   url "https://github.com/TBXark/xcode-tool/archive/refs/tags/1.0.2.tar.gz"
   sha256 "86fa8a0210d9707f06a7e7891cd8bf6521b83cf4d2781759e6d48ecad5553dca"
   license "MIT"
@@ -25,6 +25,6 @@ class XcodeTool < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+    system "xct", "--help"
   end
 end
