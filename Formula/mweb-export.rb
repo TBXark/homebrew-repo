@@ -4,8 +4,8 @@
 class MwebExport < Formula
   desc "MWeb libiary catalog generation tool"
   homepage "https://github.com/TBXark/mweb-export"
-  url "https://github.com/TBXark/mweb-export/archive/refs/tags/0.0.2.tar.gz"
-  sha256 "454c3157f00ec9c307cd5cea6cb9d3c2ba3ac469fd1b1a226a533a6c7052c8c2"
+  url "https://github.com/TBXark/mweb-export/archive/refs/tags/0.0.3.tar.gz"
+  sha256 "a857f0531daa002aa7d54d8792af149c0c3f7492f6c2c2b8d01a9f32b16c4b11"
   license "MIT"
 
   depends_on "go" => :build
