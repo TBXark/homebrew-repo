@@ -4,8 +4,8 @@
 class Rmtrash < Formula
   desc "rmtrash is a small utility that will move the file to OS X's Trash rather than obliterating the file (as rm does)."
   homepage "https://github.com/TBXark/rmtrash"
-  url "https://github.com/TBXark/rmtrash/archive/refs/tags/0.5.1.tar.gz"
-  sha256 "49eefef4fe4cbdddbc3d59f0dc5aa6924a031ef68501a6735e72e61e5e3b942c"
+  url "https://github.com/TBXark/rmtrash/archive/refs/tags/0.5.2.tar.gz"
+  sha256 "5a4c91d79e8616126e2902577c61dc7af97418c3fb53e65b7ac28a37dfe394d6"
   license "MIT"
 
   depends_on xcode: "10.2"
