@@ -8,7 +8,7 @@ class Rmtrash < Formula
   sha256 "ee24779caf87c8843ab176dbc74c29e232ae2f5ba9fdad3518457e941d737b42"
   license "MIT"
 
-  # depends_on "make" => :build
+  depends_on xcode: "10.2"
 
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
