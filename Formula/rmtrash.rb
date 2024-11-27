@@ -2,17 +2,14 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Rmtrash < Formula
-  desc "rmtrash is a small utility that will move the file to OS X's Trash rather than obliterating the file (as rm does)."
+  desc "rmtrash is a small utility that will move the file to macOS's Trash rather than obliterating the file (as rm does)."
   homepage "https://github.com/TBXark/rmtrash"
-  url "https://github.com/TBXark/rmtrash/archive/refs/tags/0.5.2.tar.gz"
-  sha256 "5a4c91d79e8616126e2902577c61dc7af97418c3fb53e65b7ac28a37dfe394d6"
+  url "https://github.com/TBXark/rmtrash/releases/download/0.6.0/rmtrash_0.6.0_universal.tar.gz"
+  sha256 "768c8af00a9f06fb84859d2f65af226f1406c65cfcd2fdb43dd958213f3e9797"
   license "MIT"
 
-  depends_on xcode: "10.2"
-
   def install
-    system "swift", "build", "--disable-sandbox", "-c", "release"
-    bin.install ".build/release/rmtrash"
+    bin.install "rmtrash"
   end
 
   test do
@@ -25,6 +22,6 @@ class Rmtrash < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "rmtrash"
+    system "rmtrash", "--version"
   end
 end
