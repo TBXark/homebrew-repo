@@ -9,7 +9,8 @@ class XcodeTool < Formula
   license "MIT"
 
   depends_on xcode: "10.2"
-
+  depends_on :macos
+  
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
     bin.install ".build/release/xct"
