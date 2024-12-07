@@ -4,14 +4,15 @@
 class Rmtrash < Formula
   desc "rmtrash is a small utility that will move the file to macOS's Trash rather than obliterating the file (as rm does)."
   homepage "https://github.com/TBXark/rmtrash"
-  url "https://github.com/TBXark/rmtrash/releases/download/0.6.3/rmtrash_0.6.3_universal.tar.gz"
-  sha256 "6aabaf7746839b15b5b4c29beeb27d864bc59f3a6efce6c8cdb3f5ccf01da014"
+  url "https://github.com/TBXark/rmtrash/releases/download/0.6.5/rmtrash_0.6.5_universal.tar.gz"
+  sha256 "5b3193675557d8e4eb321a80533bd90b27becfaf268711f3278a78c0ef5ac7fc"
   license "MIT"
 
   depends_on :macos
 
   def install
     bin.install "rmtrash"
+    man1.install "rmtrash.1"
   end
 
   test do
